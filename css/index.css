@@ -1,0 +1,89 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+.wrapper{
+  width: 600px;
+  height: 600px;
+  border: 20px solid #0af;
+  background-color: #225675;
+  position: relative;
+  margin: 5px 0 0 200px;
+}
+.btn-outer{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .3);
+  position: absolute;
+}
+.btn-outer .start-btn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  outline: none;
+  width: 200px;
+  height: 80px;
+  background-image: url('../img/startGame.png');
+  cursor: pointer;
+  background-size: 100% 100%;
+  border: none;
+  background-color: transparent;
+}
+.game-things div{
+  position: absolute;
+}
+.game-things .head{
+  width: 20px;
+  height: 20px;
+  background-image: url('../img/snake.png');
+  background-size: 100% 100%;
+  left: 40px;
+  top: 0;
+}
+.game-things .body{
+  width: 20px;
+  height: 20px;
+  background-color: #0f0;
+  border-radius: 50%;
+}
+.game-things .food{
+  width: 20px;
+  height: 20px;
+  background-image: url('../img/food.png');
+  background-size: 100% 100%;
+}
+
+.score-wrapper {
+  position: absolute;
+  top: -20px;
+  font-weight: 600;
+}
+.pausing {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+.tips{
+  border: 1px solid #000;
+  display: inline-block;
+  position: absolute;
+  left: 850px;
+  top: 50px;
+  padding: 0 20px 20px;
+}
+.restart{
+  width: 100px;
+  height: 45px;
+  background-color: #0af;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+}
+.restart:hover {
+  background-color: #0ff;
+}
